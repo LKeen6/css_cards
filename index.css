@@ -109,3 +109,37 @@ body {
 .img-round {
     border-radius: 20px;
 }
+
+.banner {
+    background: url('imgs/pines.jpg') no-repeat center center;
+    background-size: cover;
+    height: 60vh; /* Adjust as needed for the banner height */
+    position: relative;
+  }
+
+  .banner .container {
+    z-index: 2;
+  }
+
+  .banner::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, 0.5); /* Optional: Adds a dark overlay for better text contrast */
+    z-index: 1;
+  }
+
+  .banner * {
+    position: relative;
+    z-index: 2;
+  }
+
+  footer {
+    margin: 0;
+    width: 100vw;
+    padding: 0;
+
+  }
